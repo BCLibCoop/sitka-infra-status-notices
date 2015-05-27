@@ -1,0 +1,30 @@
+---
+title: Internet Explorer on Windows XP support ending
+active: true
+type: maintenance
+created_at: 2015-04-13 00:00
+eta: 2015-06-30 23:59
+affects:
+  - sitka::www
+  - coop::webmail
+  - coop::www
+  - nnels::www
+  - thirdparty::caper
+  - thirdparty::fill
+  - thirdparty::wbtw
+  - thirdparty::bcla
+  - conifer::www
+---
+
+The BC Libraries Cooperative advises we can no longer support the use of
+Internet Explorer on Windows XP. Due to numerous issues with Windows XP and the
+discontinance of Microsoft support for Windows XP, the Cooperative will no
+longer ensure that Internet Explorer on Windows XP works after Tuesday, June
+30, 2015.
+
+This will impact all library and patron systems attempting to access any
+Cooperative-hosted website. A limited systems may continue to work, but such
+access will not be supported in any way.
+
+Any affected systems should either have an OS upgrade, or switch to using
+another browser, such as Firefox or Chrome.

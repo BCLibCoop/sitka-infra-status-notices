@@ -1,0 +1,32 @@
+---
+title: IE6/IE7 Support ending
+active: true
+type: maintenance
+created_at: 2014-10-15 00:00
+eta: 2014-10-18 08:00
+expires: 2014-10-29 00:00
+affects:
+  - sitka::www
+  - coop::webmail
+  - coop::www
+  - nnels::www
+  - thirdparty::caper
+  - thirdparty::fill
+  - thirdparty::wbtw
+  - thirdparty::bcla
+  - conifer::www
+---
+
+The BC Libraries Cooperative advises we can no longer support the use of
+Internet Explorer 6. There is a [recently discovered security flaw in SSL v3,
+Security Socket
+Layer](http://www.cbc.ca/news/technology/poodle-ssl-3-0-bug-is-the-newest-threat-to-web-security-1.2799078),
+on which IE 6 relies, and which is not fixable in that browser. We will disable
+SSL v3 on the co-op servers by end of business Friday October 17, 2014. If your
+library has any computers running Internet Explorer 6, you MUST upgrade (to IE
+8, or alternatively switch to the latest Firefox) by Friday October 17 in order
+to connect to Co-op servers. Other modern web browsers now rely on a newer form
+of encryption and so are unaffected.
+
+Please contact co-op support at sitka@bc.libraries.coop if you have any
+questions.

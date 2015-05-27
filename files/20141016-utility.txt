@@ -1,0 +1,21 @@
+---
+title: Utility host updates
+active: true
+type: maintenance
+created_at: 2014-10-16 07:00
+eta: 2014-10-16 09:00
+expire_at: 2015-01-01 00:00
+affects:
+  - sitka::www
+  - sitka::reporter
+  - sitka::fines
+  - sitka::holds
+  - sitka::sip2
+  - sitka::z3950
+  - sitka::edi
+---
+
+The SITKA technical team has performed a number of overnight system-wide
+maintenance tasks revolving around updates to the utility host. These should
+not have an impact on production services, but should sites notice problems,
+please report them to SITKA support via sitka@bc.libraries.coop.
