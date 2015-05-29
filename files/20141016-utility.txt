@@ -14,6 +14,7 @@ affects:
   - sitka::sip2
   - sitka::z3950
   - sitka::edi
+markup_language: markdown
 ---
 
 The SITKA technical team has performed a number of overnight system-wide

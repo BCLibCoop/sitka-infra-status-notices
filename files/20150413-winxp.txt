@@ -15,6 +15,7 @@ affects:
   - thirdparty::wbtw
   - thirdparty::bcla
   - conifer::www
+markup_language: markdown
 ---
 
 The BC Libraries Cooperative advises we can no longer support the use of
