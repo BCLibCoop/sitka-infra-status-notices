@@ -2,6 +2,7 @@
 title: Utility host updates
 active: true
 type: maintenance
+timezone: Canada/Pacific
 created_at: 2014-10-16 07:00
 eta: 2014-10-16 09:00
 expire_at: 2015-01-01 00:00
