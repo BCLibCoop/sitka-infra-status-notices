@@ -3,8 +3,9 @@ title: Temporary Service Interruption
 active: true
 type: maintenance
 timezone: Canada/Pacific
-created_at: 2015-05-29 09:15
-eta: 2015-05-29 12:00
+created_at: 2015-05-29 11:45
+starts_at: 2015-05-29 09:13
+eta: 2015-05-29 11:07
 expire_at: 2015-06-15 00:00
 affects:
   - sitka::www
