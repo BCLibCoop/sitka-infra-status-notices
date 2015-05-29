@@ -1,0 +1,20 @@
+---
+title: Temporary Service Interruption
+active: true
+type: maintenance
+timezone: Canada/Pacific
+created_at: 2015-05-29 09:15
+eta: 2015-05-29 12:00
+expire_at: 2015-06-15 00:00
+affects:
+  - sitka::www
+markup_language: markdown
+---
+
+Due to an inadvertent problem with a network router that resulted in DNS issues, servers hosted
+by the Co-op (including, but not limited to Sitka, Libpress, mail and Licensing authentication
+sources) were temporarily unreachable today between 9:15 and 11am PDT.
+
+This issue has now been resolved, we sincerely apologize for the interruption in service.
+Please feel free to contact the Co-op's Systems Manager Scott Leslie at
+scott.leslie@bc.libraries.coop with any questions or concerns.
