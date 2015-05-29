@@ -9,6 +9,12 @@ eta: 2015-05-29 11:07
 expire_at: 2015-06-15 00:00
 affects:
   - sitka::www
+  - sitka::reporter
+  - sitka::fines
+  - sitka::holds
+  - sitka::sip2
+  - sitka::z3950
+  - sitka::edi
 markup_language: markdown
 ---
 
