@@ -1,0 +1,49 @@
+---
+title: Example Notice (markdown)
+active: false
+type: maintenance
+timezone: Canada/Pacific
+starts_at: 2012-02-20 10:00 
+created_at: 2012-02-20 10:00
+eta: 2012-02-22 10:00
+expire_at: 2020-03-20 10:00
+affects: [overlays, forums, bugzilla]
+force_state: maintenance
+markup_language: markdown
+---
+
+# Markdown example
+
+Here you can add text in the markdown format.
+
+## Parameters above:
+
+* `title`: self-explanatory
+* `active`: set this to false to completely hide the notice
+* `type`: (maintenance|information|outage) sets the icon
+* `timezone`: Timezone (Olsen-style) for display and times without an offset
+* `created_at`: when the notice was created
+* `starts_at`: when to start displaying the notice
+* `expire_at`: when to hide the notice. will be indefinitely displayed if unset
+* `eta`: estimated time the service is restored (optional)
+* `affects`: array of services this notice affects (list, optional)
+* `force_state`: (maintenance|up|down) force the state of all services this notice applies to to this state (optional)
+
+### Notes
+
+For all datetime parameters: *created_at*, *starts_at*, *expire_at*, *eta*, you
+should ideally use an ISO8601 format to write the date and time.
+
+    starts_at: YYYY-MM-DD HH:MM:SS  
+    eta: 2015-05-28 17:00:00  
+
+Optionally, you can also include a numeric timezone offset.
+
+    expire_at: YYYY-MM-DD HH:MM:SS [-]HH:SS  
+    created_at: 2015-05-28 17:00:00 -07:00  
+    eta: 2015-05-28 17:00:00 02:00  
+
+The *timezone* parameter will be used to work out what timezone to display
+notices in, as well converting any datetime parameters that do NOT have an
+offset included. You should use Olsen time specifiers here, specifically the
+subset supported by [`ActiveSupport:TimeZone`](http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html).

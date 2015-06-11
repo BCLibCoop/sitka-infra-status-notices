@@ -1,0 +1,20 @@
+---
+title: Example Notice (raw)
+active: false
+type: maintenance
+timezone: Canada/Pacific
+starts_at: 2012-02-20 10:00
+created_at: 2012-02-20 10:00
+eta: 2012-02-22 10:00
+expire_at: 2020-03-20 10:00
+affects: [overlays, forums, bugzilla]
+force_state: maintenance
+markup_language: raw
+---
+
+See the markdown example for the explaination of fields.
+
+<h3>H3 text</h3>
+
+<div>Div text <b>bold</b> <i>italic</i></div>
+

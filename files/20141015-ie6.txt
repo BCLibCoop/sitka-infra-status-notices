@@ -2,6 +2,7 @@
 title: IE6/IE7 Support ending
 active: true
 type: maintenance
+timezone: Canada/Pacific
 created_at: 2014-10-15 00:00
 eta: 2014-10-18 08:00
 expires: 2014-10-29 00:00
@@ -15,6 +16,7 @@ affects:
   - thirdparty::wbtw
   - thirdparty::bcla
   - conifer::www
+markup_language: markdown
 ---
 
 The BC Libraries Cooperative advises we can no longer support the use of
