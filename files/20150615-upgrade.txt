@@ -3,8 +3,7 @@ title: Sitka Evergreen 2.8 Upgrade
 active: true
 type: information
 timezone: Canada/Pacific
-starts_at: 2015-06-15 14:00:00eta: 2015-07-13 12:00:00
-expires : 2015-07-14 6:00:00
+starts_at: 2015-06-15 14:00:00expire_at: 2015-07-14 6:00:00
 affects:
   - sitka::www
 markup_language: markdown
