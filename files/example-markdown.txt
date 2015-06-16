@@ -18,26 +18,41 @@ Here you can add text in the markdown format.
 
 ## Parameters above:
 
-* `title`: self-explanatory
-* `active`: set this to false to completely hide the notice
-* `type`: (maintenance|information|outage) sets the icon
+* `title`: self-explanatory **(REQUIRED)**
+* `active`: `(true|false)`  set this to false to completely hide the notice
+  **(REQUIRED)**
+* `type`: `(maintenance|information|outage)` sets the icon **(REQUIRED)**
 * `timezone`: Timezone (Olsen-style) for display and times without an offset
-* `created_at`: when the notice was created
-* `starts_at`: when to start displaying the notice
-* `expire_at`: when to hide the notice. will be indefinitely displayed if unset
-* `eta`: estimated time the service is restored (optional)
-* `affects`: array of services this notice affects (list, optional)
-* `force_state`: (maintenance|up|down) force the state of all services this notice applies to to this state (optional)
+  (optional, defaults to UTC)
+* `created_at`: when the notice was created. If in the future, it will NOT
+  display until that point **(REQUIRED)**
+* `starts_at`: what start time to include on the notice (optional, no default)
+* `expire_at`: when to hide the notice. will be indefinitely displayed if
+  unset (optional, no default)
+* `eta`: estimated time the service is restored (optional, no default)
+* `affects`: array of services this notice affects (list, optional, no default)
+* `force_state`: `(maintenance|up|down)` force the state of all services this
+  notice applies to to this state (optional, no default)
+* `markup_language`: `(asciidoc|asciidoctor|markdown|raw)` supported languages
+  for notice (optional, defaults to markdown)
 
 ### Notes
 
+You MUST always include the following fields:
+
+    title:
+    active:
+    type:
+    created_at:
+
 For all datetime parameters: *created_at*, *starts_at*, *expire_at*, *eta*, you
-should ideally use an ISO8601 format to write the date and time.
+must use an ISO8601 format to write the date and time.
 
     starts_at: YYYY-MM-DD HH:MM:SS  
     eta: 2015-05-28 17:00:00  
 
-Optionally, you can also include a numeric timezone offset.
+Optionally, you can also include a numeric timezone offset. Textual timezones
+are NOT supported.
 
     expire_at: YYYY-MM-DD HH:MM:SS [-]HH:SS  
     created_at: 2015-05-28 17:00:00 -07:00  
