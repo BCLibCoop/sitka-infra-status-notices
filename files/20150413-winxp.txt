@@ -20,11 +20,11 @@ markup_language: markdown
 
 The BC Libraries Cooperative advises we can no longer support the use of
 Internet Explorer on Windows XP. Due to numerous issues with Windows XP and the
-discontinance of Microsoft support for Windows XP, the Cooperative will no
+discontinuance of Microsoft support for Windows XP, the Cooperative will no
 longer ensure that Internet Explorer on Windows XP works after Tuesday, June
 30, 2015.
 
-This will impact all library and patron systems attempting to access any
+This will affect all library and patron systems attempting to access any
 Cooperative-hosted website. A limited systems may continue to work, but such
 access will not be supported in any way.
 
